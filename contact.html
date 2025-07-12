@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Mani X Code</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    }
+    .header {
+      background: linear-gradient(90deg, #ff6a00, #ee0979, #43cea2, #185a9d);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      color: #fff;
+      padding: 48px 0 32px 0;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      margin-bottom: 32px;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0;
+      background: linear-gradient(90deg, #fff700, #00ffd0, #ff00c8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: textGradient 5s linear infinite;
+      background-size: 200% 200%;
+    }
+    @keyframes textGradient {
+      0% {background-position: 0% 50%;}
+      100% {background-position: 100% 50%;}
+    }
+    .contact-section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 32px 24px 48px 24px;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(67, 206, 162, 0.10);
+      text-align: center;
+    }
+    .contact-section h2 {
+      color: #185a9d;
+      font-size: 2rem;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    .contact-info {
+      color: #333;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .contact-info .highlight {
+      color: #ee0979;
+      font-weight: 600;
+    }
+    .contact-links a {
+      display: inline-block;
+      margin: 10px 8px;
+      padding: 10px 24px;
+      background: linear-gradient(90deg, #ff6a00, #ee0979, #43cea2, #185a9d);
+      background-size: 200% 200%;
+      color: #fff;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-position 0.5s, transform 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    .contact-links a:hover {
+      background-position: 100% 0;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+    }
+     .footer {
+  margin-top: 32px;
+  padding: 24px 0;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  box-shadow: 0 -4px 24px rgba(67, 206, 162, 0.10);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Contact Me</h1>
+  </div>
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <div class="contact-info">
+      <p><span class="highlight">WhatsApp:</span> 03278005936</p>
+      <p><span class="highlight">Email:</span> hideboy12345@gmail.com</p>
+      <p><span class="highlight">Location:</span> Headrajkan, Tehsil Yazman, District Bahawalpur, Punjab, Pakistan</p>
+    </div>
+    <div class="contact-links">
+      <a href="https://wa.me/923278005936" target="_blank">WhatsApp Me</a>
+      <a href="mailto:hideboy12345@gmail.com">Send Email</a>
+    </div>
+  </section>
+   <footer class="footer">
+  <p>&copy; 2025 Mani X Code. All rights reserved.</p>
+</footer>
+</body>

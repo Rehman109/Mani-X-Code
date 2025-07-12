@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mani X Code</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    }
+    .header {
+      background: linear-gradient(90deg, #ff6a00, #ee0979, #43cea2, #185a9d);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      color: #fff;
+      padding: 60px 0 40px 0;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0;
+      text-shadow: 0 4px 24px rgba(0,0,0,0.2);
+      background: linear-gradient(90deg, #fff700, #00ffd0, #ff00c8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: textGradient 5s linear infinite;
+      background-size: 200% 200%;
+    }
+    @keyframes textGradient {
+      0% {background-position: 0% 50%;}
+      100% {background-position: 100% 50%;}
+    }
+    .header p {
+      font-size: 1.3rem;
+      margin-top: 18px;
+      color: #fff;
+      opacity: 0.92;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    .header::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 12px;
+      background: radial-gradient(circle, #fff 60%, transparent 100%);
+      opacity: 0.5;
+      filter: blur(2px);
+    }
+  </style>
+  <style>
+/* ...existing code... */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 32px 0 0 0;
+}
+.button-row button {
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #43cea2, #185a9d);
+  background-size: 200% 200%;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  transition: background-position 0.5s, transform 0.2s;
+  outline: none;
+}
+.button-row button:hover {
+  background-position: 100% 0;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+}
+.button-row a {
+  text-decoration: none;
+  color: inherit;
+}
+.button-row a:hover {
+  text-decoration: underline;
+}
+.button-row a {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #43cea2, #185a9d);
+  background-size: 200% 200%;
+  color: #fff;
+  border-radius: 24px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  transition: background-position 0.5s, transform 0.2s;
+}
+.button-row a:hover {
+  background-position: 100% 0;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+}
+.button-row a:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+    .button-row a:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.5);
+    }
+    .button-row a:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.5);
+    }
+    .button-row a:focus:not(:focus-visible) {
+        box-shadow: none;
+    }
+    .button-row a:active {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    }
+/* ...existing code... */
+.services {
+  max-width: 1100px;
+  margin: 48px auto 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+.services h2 {
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  color: #185a9d;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px rgba(67, 206, 162, 0.08);
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.service-card {
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(67, 206, 162, 0.10);
+  padding: 32px 28px;
+  width: 240px;
+  min-height: 180px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #43cea2;
+}
+.service-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(67, 206, 162, 0.18);
+  border-color: #ee0979;
+}
+.service-card h3 {
+  margin-top: 0;
+  color: #ff6a00;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+.service-card p {
+  color: #185a9d;
+  font-size: 1rem;
+</style>
+<style>
+.testimonials {
+  max-width: 900px;
+  margin: 56px auto 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+.testimonials-heading {
+  display: inline-block;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  background-size: 200% 200%;
+  color: #fff;
+  border-radius: 24px;
+  padding: 12px 32px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  animation: gradientMove 8s ease infinite;
+}
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(67, 206, 162, 0.10);
+  padding: 24px 20px;
+  width: 260px;
+  min-height: 120px;
+  color: #185a9d;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  border: 2px solid #43cea2;
+}
+.testimonial-card span {
+  display: block;
+  margin-top: 10px;
+  color: #ee0979;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.whatsapp-icon {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+}
+.whatsapp-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.18);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  position: relative;
+}
+.whatsapp-icon a:hover {
+  transform: scale(1.12) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.28);
+}
+.wa-svg {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+.footer {
+  margin-top: 32px;
+  padding: 24px 0;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  box-shadow: 0 -4px 24px rgba(67, 206, 162, 0.10);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Welcome to Mani X Code</h1>
+    <p>Make your day joyful with codding</p>
+  </div>
+  <div class="button-row">
+   <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="other-sites.html">Other Sites</a>
+  <a href="contact.html">Contact</a>
+  </div>
+  <script>
+      // Optional: Add any JavaScript functionality here
+      console.log("Welcome to Mani X Code!");
+      document.querySelector('.header').addEventListener('click', function() {
+          alert('You clicked the header!');
+      });
+  </script>
+    <!-- Services Section Start -->
+  <section class="services">
+     <h2 class="reviews-heading">Our Services</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <h3>Online Paid Courses</h3>
+        <p>We have some high level, high scoped online paid courses for those people who are in search of courses like free. So why you are waiting anymore to be succeed in your life? Just contact us on whatsapp (03278005936) to enjoy and learn your courses.</p>
+      </div>
+      <div class="service-card">
+        <h3>Social Media MArketing</h3>
+        <p>We are providing social media marketing services with best quality and lifetime guarantee. Boost your social media accounts with us. Get Followerrs, Likes, Subscribers, Views, Comments, Shares & manymore at very low price. UK/USA tiktok accounts are also available.</p>
+      </div>
+      <div class="service-card">
+        <h3>Designing</h3>
+        <p>We makes beautiful, attractive, stylish and unique Thumnail for your youtube video to engage more audiance on your video. We also makes posters for your products and companies. We also makes unique logos for your brands and companies.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+  <script>
+      // Optional: Add any JavaScript functionality here
+      console.log("Welcome to Mani X Code!");
+      document.querySelector('.header').addEventListener('click', function() {
+          alert('You clicked the header!');
+      });
+  </script>
+
+ <!-- Place this before the <footer> and after your main content/services section -->
+<div class="whatsapp-icon">
+  <a href="https://wa.me/923278005936" target="_blank" title="Chat on WhatsApp">
+    <svg viewBox="0 0 64 64" class="wa-svg" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="wa-gradient" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#43ff64"/>
+          <stop offset="100%" stop-color="#25d366"/>
+        </radialGradient>
+      </defs>
+      <circle cx="32" cy="32" r="32" fill="url(#wa-gradient)"/>
+      <path d="M47.1 39.7c-0.7-0.3-4.1-2-4.7-2.2-0.6-0.2-1-0.3-1.4 0.3s-1.6 2.2-2 2.7c-0.4 0.5-0.7 0.6-1.3 0.2-3.6-1.8-5.9-3.2-8.2-7.2-0.6-1 0.6-0.9 1.7-3 0.2-0.4 0.1-0.8-0.1-1.1-0.2-0.3-1.4-3.3-1.9-4.5-0.5-1.2-1-1-1.4-1-0.4 0-0.8 0-1.2 0-0.4 0-1.1 0.1-1.7 0.8-0.6 0.7-2.2 2.1-2.2 5.1 0 2.9 2.1 5.7 2.4 6.1 0.3 0.4 4.2 6.7 10.3 8.9 1.4 0.5 2.5 0.8 3.3 1 1.4 0.2 2.7 0.2 3.7 0.1 1.1-0.1 3.4-1.4 3.8-2.7 0.5-1.3 0.5-2.4 0.4-2.7-0.1-0.3-0.6-0.5-1.3-0.8z" fill="#fff"/>
+      <ellipse cx="32" cy="32" rx="28" ry="28" fill="none" stroke="#075e54" stroke-width="2"/>
+      <circle cx="48" cy="18" r="3" fill="#fff" opacity="0.7"/>
+    </svg>
+  </a>
+</div>
+  <footer class="footer">
+  <p>&copy; 2025 Mani X Code. All rights reserved.</p>
+</footer>
+</body>
+</html>

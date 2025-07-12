@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reviews | Mani X Code</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    }
+    .header {
+      background: linear-gradient(90deg, #ff6a00, #ee0979, #43cea2, #185a9d);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      color: #fff;
+      padding: 48px 0 32px 0;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      margin-bottom: 32px;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0;
+      background: linear-gradient(90deg, #fff700, #00ffd0, #ff00c8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: textGradient 5s linear infinite;
+      background-size: 200% 200%;
+    }
+    @keyframes textGradient {
+      0% {background-position: 0% 50%;}
+      100% {background-position: 100% 50%;}
+    }
+    .reviews-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 48px 24px;
+      text-align: center;
+    }
+    .reviews-heading {
+      display: inline-block;
+      background: linear-gradient(90deg, #43cea2, #185a9d);
+      background-size: 200% 200%;
+      color: #fff;
+      border-radius: 24px;
+      padding: 12px 32px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 32px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      animation: gradientMove 8s ease infinite;
+    }
+    .reviews-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: center;
+      margin-top: 32px;
+    }
+    .review-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(67, 206, 162, 0.10);
+      padding: 24px 20px;
+      width: 260px;
+      min-height: 120px;
+      color: #185a9d;
+      font-size: 1rem;
+      margin-bottom: 12px;
+      border: 2px solid #43cea2;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .review-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 8px 32px rgba(67, 206, 162, 0.18);
+      border-color: #ee0979;
+    }
+    .review-card span {
+      display: block;
+      margin-top: 10px;
+      color: #ee0979;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+     .footer {
+  margin-top: 32px;
+  padding: 24px 0;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  box-shadow: 0 -4px 24px rgba(67, 206, 162, 0.10);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Client Reviews</h1>
+  </div>
+  <section class="reviews-section">
+    <h2 class="reviews-heading">What Our Clients Say</h2>
+    <div class="reviews-list">
+      <div class="review-card">
+        <p>"The courses are amazing and easy to follow. Highly recommended!"</p>
+        <span>- Ali Raza</span>
+      </div>
+      <div class="review-card">
+        <p>"My social media grew fast thanks to their marketing service!"</p>
+        <span>- Sana Malik</span>
+      </div>
+      <div class="review-card">
+        <p>"Best designs for my YouTube channel. Will order again!"</p>
+        <span>- Usman Tariq</span>
+      </div>
+      <div class="review-card">
+        <p>"Very professional and supportive team. Loved the experience!"</p>
+        <span>- Fatima Noor</span>
+      </div>
+        <div class="review-card">
+            <p>"Their online courses helped me land a job in tech!"</p>
+            <span>- Ahmed Khan</span>
+    </div>
+        <div class="review-card">
+            <p>"Excellent service! My website looks stunning and works flawlessly."</p>
+            <span>- Sara Ali</span>
+        </div>
+        <div class="review-card">
+            <p>"I loved the personalized approach and attention to detail."</p>
+            <span>- Bilal Ahmed</span>
+        </div>
+        <div class="review-card">
+            <p>"Their team is very responsive and helpful. Highly recommend!"</p>
+            <span>- Aisha Khan</span>
+        </div>
+        <div class="review-card">
+            <p>"Great value for money! The courses are worth every penny."</p>
+            <span>- Hamza Iqbal</span>
+        </div>
+        <div class="review-card">
+            <p>"I saw a significant increase in my social media engagement."</p>
+            <span>- Zara Hussain</span>
+    </div>
+        <div class="review-card">
+            <p>"Their design work is top-notch. My brand has never looked better!"</p>
+            <span>- Omar Farooq</span>
+        </div>
+        <div class="review-card">
+            <p>"I appreciate their quick turnaround time and quality work."</p>
+            <span>- Hina Shah</span>
+    </div>
+        <div class="review-card">
+            <p>"The online courses are very informative and well-structured."</p>
+            <span>- Taimoor Ali</span>
+        </div>
+        <div class="review-card">
+            <p>"Their social media marketing strategies are effective and affordable."</p>
+            <span>- Nida Khan</span>
+        </div>
+        <div class="review-card">
+            <p>"I am very satisfied with the service and will definitely return."</p>
+            <span>- Yasir Malik</span>
+        </div>
+        <div class="review-card">
+            <p>"Their team is knowledgeable and always ready to help."</p>
+            <span>- Rehan Ahmed</span>
+        </div>
+        <div class="review-card">   
+            <p>"I love the unique designs they created for my brand."</p>
+            <span>- Mehak Ali</span>
+        </div>
+
+  </section>
+   <footer class="footer">
+  <p>&copy; 2025 Mani X Code. All rights reserved.</p>
+</footer>
+</body>
